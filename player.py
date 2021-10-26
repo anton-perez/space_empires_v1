@@ -7,22 +7,21 @@ from colony import *
 
 class Player():
   def __init__(self, strategy):
-    self.player_number = None
+    self.player_num = None
     self.home_colony = None
     self.ships = []
     self.colonies = []
     self.strategy = strategy
-    self.strategy.set_player(self)
 
-  def set_player_number(self, n):
-    self.player_number = n
+  def set_player_number(self, player_num):
+    self.player_num = player_num
 
   def set_home_colony(self, colony):
-    colony.set_player_number(self.player_number)
+    colony.set_player_number(self.player_num)
     self.home_colony = colony
 
   def add_ship(self, ship):
-    ship.set_player_number(self.player_number)
+    ship.set_player_number(self.player_num)
     ship.set_ship_number(len(self.get_ships_by_type(ship.name))+1)
     self.ships.append(ship)
 
@@ -30,14 +29,17 @@ class Player():
     self.ships.remove(ship)
 
   def add_colony(self, colony):
-    colony.set_player_number(self.player_number)
+    colony.set_player_number(self.player_num)
     self.colonies.append(colony)
 
   def get_ships_by_type(self, type_name):
     return [ship for ship in self.ships if ship.name == type_name]
 
-  def choose_translation(self, board, choices, ship):
-    return self.strategy.choose_translation(board, choices, ship)
+  def get_info_from_ship(self, ship):
+    return ship.__dict__()
 
-  def choose_target(self, opponent_ships):
-    return self.strategy.choose_target(opponent_ships)
+  def choose_translation(self, ship_info, choices):
+    return self.strategy.choose_translation(ship_info, choices)
+
+  def choose_target(self, ship_info, combat_order_info):
+    return self.strategy.choose_target(ship_info, combat_order_info)

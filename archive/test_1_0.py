@@ -1,7 +1,6 @@
 import sys
 sys.path.append('')
 from player import *
-sys.path.append('games')
 from game import *
 sys.path.append('strategies')
 from custom_strategy import *
