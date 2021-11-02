@@ -5,10 +5,11 @@ from ships import *
 from colony import *
 sys.path.append('logs')
 from logger import *
+random.seed(3)
 
 class Game:
   def __init__(self, players, board_size=[7,7]):
-    self.logs = Logger('/home/runner/tempspaceempires/logs/game-logs.txt')
+    self.logs = Logger('/home/runner/spaceempiresv1/logs/game-logs.txt')
     self.players = players
     self.board_size = board_size
     
@@ -202,7 +203,7 @@ class Game:
           if len(opponent_ships) == 0:
             continue
           ship_info = self.get_info_from_obj(ship)
-          combat_order_info = [self.get_info_from_obj(ship) for ship in combat_order]
+          combat_order_info = [self.get_info_from_obj(ship) for ship in combat_order if ship.hp > 0] 
           target_info = player.choose_target(ship_info, combat_order_info) # choose_target
           target = self.get_obj_from_info(target_info)
           target_player = self.players[target.player_num - 1]
@@ -223,7 +224,6 @@ class Game:
               
           else:
             self.logs.write('\t\t(Miss)\n')
-
 
         for ship in combat_order:
           if ship.hp <= 0:

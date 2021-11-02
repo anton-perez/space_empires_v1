@@ -8,9 +8,6 @@ class CustomStrategy():
   
   def update_simple_board(self, updated_board):
     self.simple_board = updated_board
-  
-  # def get_ships_by_type(self, type_name):
-  #   return [ship for ship in self.player.ships if ship.name == type_name]
 
   def get_opponent_ships(self, ship_info, combat_order_info):
     return [obj_info for obj_info in combat_order_info if obj_info['player_num'] != ship_info['player_num'] and obj_info['hp'] > 0]
@@ -27,17 +24,6 @@ class CustomStrategy():
           coords.append(coord)
 
     return coords
-
-  # def find_home_colonies(self, board):
-  #   board_x, board_y = (len(board[0]), len(board))
-  #   coords = []
-  #   for y in range(board_y):
-  #     for x in range(board_x):
-  #       for obj in board[y][x]:
-  #         is_opponent_home_colony = isinstance(obj, Colony) and obj.is_home_colony and obj.player_number != self.player.player_number
-  #         if is_opponent_home_colony:
-  #           coords.append((x,y))
-  #   return coords
 
   def find_min_choice(self, choices, coord):
     min_choice = choices[0]
@@ -63,20 +49,12 @@ class CustomStrategy():
       
       return min_choice
 
-  # def choose_translation(self, board, choices, ship):
-  #   target_coords = self.find_min_choice(self.find_home_colonies(board), ship.coords)
-  #   return self.min_distance_translation(choices, ship, target_coords)
-
   def choose_translation(self, ship_info, choices):
     ship_coords = ship_info['coords']
     player_num = ship_info['player_num']
     target_coords = self.find_min_choice(self.find_home_colonies(ship_info), ship_coords)
     return self.min_distance_translation(choices, ship_info, target_coords)
     
-  # def choose_target(self, opponent_ships):
-  #   random_idx = math.floor(len(opponent_ships) * random())
-  #   return opponent_ships[random_idx]
-
   def choose_target(self, ship_info, combat_order_info):
     opponent_ship_infos = self.get_opponent_ships(ship_info,combat_order_info)
     random_idx = math.floor(len(opponent_ship_infos) * random())
