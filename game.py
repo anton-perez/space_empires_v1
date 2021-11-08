@@ -5,7 +5,7 @@ from ships import *
 from colony import *
 sys.path.append('logs')
 from logger import *
-random.seed(3)
+# random.seed(3)
 
 class Game:
   def __init__(self, players, board_size=[7,7]):
@@ -135,8 +135,7 @@ class Game:
     for obj in self.board[y][x]:
       if self.get_info_from_obj(obj) == obj_info:
         return obj
-    print('not found')
-    print(obj_info)
+    
 
   def move_ship(self, ship, translation):
     x,y = ship.coords
@@ -180,7 +179,7 @@ class Game:
         self.update_simple_boards()
         self.logs.write('\tPlayer {} {} {}: {} -> {}\n'.format(ship.player_num, ship.name, ship.ship_num, current_coords, ship.coords))
     
-    self.print_board()
+    # self.print_board()
     self.logs.write('\nEND OF TURN {} MOVEMENT PHASE\n'.format(self.turn))
 
   
