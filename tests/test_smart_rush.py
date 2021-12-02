@@ -3,32 +3,29 @@ sys.path.append('')
 from player import *
 from game import *
 sys.path.append('strategies')
-from test_strategy import *
-from priority_attacker import *
+from bum_rush import *
+from smart_rush import *
 
 
 
 num_wins = {1: 0, 2: 0}
 
-for _ in range(1000):
-  players = [Player(PriorityAttacker()), Player(CustomStrategy())]
+for _ in range(50):
+  players = [Player(SmartRush()), Player(BumRush())]
   game = Game(players)
   game.run_to_completion()
   winner = game.winner
   num_wins[winner] += 1
 
-print('Player 1 PriorityAttacker', num_wins)
+print('Player 1 SmartRush', num_wins)
 
 num_wins = {1: 0, 2: 0}
 
-for _ in range(1000):
-  players = [Player(CustomStrategy()), Player(PriorityAttacker())]
+for _ in range(50):
+  players = [Player(BumRush()), Player(SmartRush())]
   game = Game(players)
   game.run_to_completion()
   winner = game.winner
   num_wins[winner] += 1
 
-print('Player 2 PriorityAttacker', num_wins)
-
-
-
+print('Player 2 SmartRush', num_wins)

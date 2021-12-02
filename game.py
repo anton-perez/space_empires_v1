@@ -3,6 +3,7 @@ import sys
 sys.path.append('')
 from ships import *
 from colony import *
+from ship_info import *
 sys.path.append('logs')
 from logger import *
 # random.seed(3)
@@ -36,11 +37,33 @@ class Game:
       home_colony = Colony(init_coords) # add home colony
       home_colony.is_home_colony = True
       player.set_home_colony(home_colony)
+      player.cp = 200
 
-      for _ in range(3):# add scouts
-        player.add_ship(Scout(init_coords))
-      for _ in range(3):# add battlecruisers
-        player.add_ship(BattleCruiser(init_coords))
+      # for _ in range(3):# add scouts
+      #   player.add_ship(Scout(init_coords))
+      # for _ in range(3):# add battlecruisers
+      #   player.add_ship(BattleCruiser(init_coords))
+
+      player_ships = player.buy_ships(player.cp)
+      total_cost = self.calc_total_cost(player_ships)
+      if total_cost > player.cp:
+        print(f'Player {player_num} went over budget')
+        continue
+      player.cp -= total_cost
+      for name in player_ships:
+        for i in range(player_ships[name]):
+          ship = ship_objects[name](init_coords)
+          if ship == None:
+            continue
+          player.add_ship(ship)
+
+  def calc_total_cost(self, ship_dict):
+    total = 0
+    for name in ship_dict:
+      for ship_info in all_ship_infos:
+        if ship_info['name'] == name:
+          total += ship_dict[name] * ship_info['cp_cost']
+    return total
 
   def initialize_board(self):
     for player in self.players:
@@ -118,8 +141,8 @@ class Game:
   def check_for_opponent_ships(self, obj):
     for ship in self.get_all_ships_on_space(obj.coords):
       if obj.player_num != ship.player_num:
-        return False
-    return True
+        return True
+    return False
   
   def get_opponent_ships(self, ship, combat_order):
     return [obj for obj in combat_order if obj.player_num != ship.player_num and obj.hp > 0]
@@ -150,7 +173,7 @@ class Game:
   def hit(self, attacker, defender):
     roll = self.roll()
     threshold = attacker.atk - defender.df
-    if roll <= threshold:
+    if roll <= threshold or roll == 1:
       return True
     return False
 
@@ -159,7 +182,7 @@ class Game:
 
     for player in self.players:
       for ship in player.ships:
-        opponent_ships_on_space = not self.check_for_opponent_ships(ship)
+        opponent_ships_on_space = self.check_for_opponent_ships(ship)
         if opponent_ships_on_space:
           continue
         current_coords = ship.coords
@@ -172,7 +195,7 @@ class Game:
           translation = (0,0)
 
         self.move_ship(ship, translation)
-        moved_to_opponent_space = not self.check_for_opponent_ships(ship)
+        moved_to_opponent_space = self.check_for_opponent_ships(ship)
         if moved_to_opponent_space and ship.coords not in self.combat_coords:
           self.combat_coords.append(ship.coords)
 
@@ -234,23 +257,43 @@ class Game:
 
     self.logs.write('\nEND OF TURN {} COMBAT PHASE\n'.format(self.turn))
 
+  def remove_player(self, player):
+    for ship in player.ships:
+      self.remove_from_board(ship)
+    for colony in player.colonies:
+      self.remove_from_board(colony)
+    self.remove_from_board(player.home_colony)
+    self.players.remove(player)
+    
   def check_for_winner(self):
-    p1_ships = self.players[0].ships
-    p1_home_colony_coords = self.players[0].home_colony.coords
-    p2_ships = self.players[1].ships
-    p2_home_colony_coords = self.players[1].home_colony.coords
+    for player in self.players:
+      if self.check_for_opponent_ships(player.home_colony):
+        self.logs.write('\nPLAYER {} HAS BEEN REMOVED FROM THE GAME\n'.format(player.player_num))
+        self.remove_player(player)
+    if len(self.players) == 1:
+      return self.players[0].player_num
+      self.logs.write('\nPLAYER {} HAS WON'.format(self.winner))
+    if len(self.players) == 0:
+      self.logs.write('TIE GAME')
+      return "Tie"
 
-    if any(p1_ships[i].coords == p2_home_colony_coords for i in range(len(p1_ships))) and any(p2_ships[i].coords == p1_home_colony_coords for i in range(len(p2_ships))):
-      self.logs.write('\nTIE GAME')
-      return 'Tie' 
-    elif any(p1_ships[i].coords == p2_home_colony_coords for i in range(len(p1_ships))):
-      self.logs.write('\nWINNER: PLAYER 1')
-      return 1
-    elif any(p2_ships[i].coords == p1_home_colony_coords for i in range(len(p2_ships))):
-      self.logs.write('\nWINNER: PLAYER 2')
-      return 2
-    else:
-      return None
+
+    # p1_ships = self.players[0].ships
+    # p1_home_colony_coords = self.players[0].home_colony.coords
+    # p2_ships = self.players[1].ships
+    # p2_home_colony_coords = self.players[1].home_colony.coords
+
+    # if any(p1_ships[i].coords == p2_home_colony_coords for i in range(len(p1_ships))) and any(p2_ships[i].coords == p1_home_colony_coords for i in range(len(p2_ships))):
+    #   self.logs.write('\nTIE GAME')
+    #   return 'Tie' 
+    # elif any(p1_ships[i].coords == p2_home_colony_coords for i in range(len(p1_ships))):
+    #   self.logs.write('\nWINNER: PLAYER 1')
+    #   return 1
+    # elif any(p2_ships[i].coords == p1_home_colony_coords for i in range(len(p2_ships))):
+    #   self.logs.write('\nWINNER: PLAYER 2')
+    #   return 2
+    # else:
+    #   return None
 
   def run_to_completion(self):
     while self.winner == None:
@@ -260,7 +303,7 @@ class Game:
       self.winner = self.check_for_winner()
 
   def run_until(self, n):
-    while self.turn <= n:
+    while self.turn <= n and self.winner == None:
       self.complete_movement_phase()
       self.complete_combat_phase()
       self.turn += 1
