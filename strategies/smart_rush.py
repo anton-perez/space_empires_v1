@@ -13,7 +13,10 @@ class SmartRush:
     return [obj_info for obj_info in combat_order_info if obj_info['player_num'] != ship_info['player_num'] and obj_info['hp'] > 0]
 
   def get_opponent_ships_on_space(self, ship_info, coords):
-    return [obj_info for obj_info in self.simple_board[coords] if obj_info['player_num'] != ship_info['player_num'] and obj_info['obj_type'] == 'Ship' and obj_info['hp'] > 0]
+    if coords in self.simple_board.keys():
+      return [obj_info for obj_info in self.simple_board[coords] if obj_info['player_num'] != ship_info['player_num'] and obj_info['obj_type'] == 'Ship' and obj_info['hp'] > 0]
+    else:
+      return []
 
   def calc_distance(self, point_1, point_2):
     return (abs(point_2[0]-point_1[0])**2 + abs(point_2[1]-point_1[1])**2)**0.5
