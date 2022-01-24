@@ -3,7 +3,7 @@ import sys
 sys.path.append('')
 from ships import *
 from colony import *
-from ship_info import *
+from ship_data import *
 sys.path.append('logs')
 from logger import *
 # random.seed(3)
@@ -37,7 +37,7 @@ class Game:
       home_colony = Colony(init_coords) # add home colony
       home_colony.is_home_colony = True
       player.set_home_colony(home_colony)
-      player.cp = 200
+      player.cp = 150
 
       # for _ in range(3):# add scouts
       #   player.add_ship(Scout(init_coords))
@@ -47,7 +47,7 @@ class Game:
       player_ships = player.buy_ships(player.cp)
       total_cost = self.calc_total_cost(player_ships)
       if total_cost > player.cp:
-        print(f'Player {player_num} went over budget')
+        self.logs.write('\n\tPlayer {} went over budget'.format(player.player_num))
         continue
       player.cp -= total_cost
       for name in player_ships:
@@ -59,10 +59,12 @@ class Game:
 
   def calc_total_cost(self, ship_dict):
     total = 0
-    for name in ship_dict:
-      for ship_info in all_ship_infos:
-        if ship_info['name'] == name:
-          total += ship_dict[name] * ship_info['cp_cost']
+
+    if ship_dict != None:
+      for name in ship_dict:
+        for ship_info in all_ships:
+          if ship_info['name'] == name:
+            total += ship_dict[name] * ship_info['cp_cost']
     return total
 
   def initialize_board(self):
@@ -87,6 +89,7 @@ class Game:
     for player in self.players:
       #player.strategy.update_simple_board(simple_board) 
       player.strategy.simple_board = simple_board 
+      player.strategy.turn = self.turn
 
 
   def initialize_game(self):
@@ -177,6 +180,25 @@ class Game:
       return True
     return False
 
+  def maintenance(self, player):
+    self.logs.write('\n\tMaintenance for Player {}:\n'.format(player.player_num))
+    #initial cp
+    total_maint_cost = 0
+    for i, ship in enumerate(player.ships):
+      if total_maint_cost + ship.maint_cost <= player.cp:
+        total_maint_cost += ship.maint_cost
+        self.logs.write('\t\tMaintenance done for Player {} {} {}\n'.format(ship.player_num, ship.name, ship.ship_num))
+      else:
+        self.logs.write('\n\tPlayer {} has insufficient funds for further ship maintenance. Removing the remaining ships:\n'.format(player.player_num))
+        for rmvd_ship in player.ships[i:]:
+          self.logs.write('\t\tPlayer {} {} {}\n'.format(rmvd_ship.player_num, rmvd_ship.name, rmvd_ship.ship_num))
+          self.remove_from_board(rmvd_ship)
+        player.ships = player.ships[:i]
+        break
+    
+    player.cp -= total_maint_cost
+    #final cp
+
   def complete_movement_phase(self):
     self.logs.write('\nBEGINNING OF TURN {} MOVEMENT PHASE\n\n'.format(self.turn))
 
@@ -191,7 +213,7 @@ class Game:
         translation = player.choose_translation(ship_info, potential_translations)
 
         if translation not in potential_translations:
-          self.logs.write('\tPlayer {} {} {} tried to make an invalid move: {}\n'.format(ship.player_number, ship.name, ship.ship_number, translation))
+          self.logs.write('\tPlayer {} {} {} tried to make an invalid move: {}\n'.format(ship.player_num, ship.name, ship.ship_num, translation))
           translation = (0,0)
 
         self.move_ship(ship, translation)
@@ -205,7 +227,6 @@ class Game:
     # self.print_board()
     self.logs.write('\nEND OF TURN {} MOVEMENT PHASE\n'.format(self.turn))
 
-  
   def complete_combat_phase(self): # prioritization: class, tactics, first in square
     self.logs.write('\nBEGINNING OF TURN {} COMBAT PHASE\n'.format(self.turn))
     if self.winner != None:
@@ -257,6 +278,35 @@ class Game:
 
     self.logs.write('\nEND OF TURN {} COMBAT PHASE\n'.format(self.turn))
 
+  def complete_economic_phase(self):
+    self.logs.write('\nBEGINNING OF TURN {} ECONOMIC PHASE\n'.format(self.turn))
+    for player in self.players:
+      player.cp += 10
+      
+      self.maintenance(player)
+
+      player_ships = player.buy_ships(player.cp)
+      total_cost = self.calc_total_cost(player_ships)
+      if total_cost > player.cp:
+        self.logs.write('\n\tPlayer {} went over budget'.format(player.player_num))
+        continue
+      player.cp -= total_cost
+      if player_ships != None:
+        self.logs.write('\n\tPlayer {} buys the following ships:'.format(player.player_num))
+        for name in player_ships:
+          for i in range(player_ships[name]):
+            init_coords = player.home_colony.coords
+            ship = ship_objects[name](init_coords)
+            if ship == None:
+              continue
+            player.add_ship(ship)
+            self.add_to_board(ship)
+            self.logs.write('\n\t\t Player {} {} {}'.format(ship.player_num, ship.name, ship.ship_num))
+          self.logs.write('\n')
+
+
+    self.logs.write('\nEND OF TURN {} ECONOMIC PHASE\n'.format(self.turn))
+
   def remove_player(self, player):
     for ship in player.ships:
       self.remove_from_board(ship)
@@ -271,34 +321,17 @@ class Game:
         self.logs.write('\nPLAYER {} HAS BEEN REMOVED FROM THE GAME\n'.format(player.player_num))
         self.remove_player(player)
     if len(self.players) == 1:
+      self.logs.write('\nPLAYER {} HAS WON'.format(self.players[0].player_num))
       return self.players[0].player_num
-      self.logs.write('\nPLAYER {} HAS WON'.format(self.winner))
     if len(self.players) == 0:
       self.logs.write('TIE GAME')
       return "Tie"
-
-
-    # p1_ships = self.players[0].ships
-    # p1_home_colony_coords = self.players[0].home_colony.coords
-    # p2_ships = self.players[1].ships
-    # p2_home_colony_coords = self.players[1].home_colony.coords
-
-    # if any(p1_ships[i].coords == p2_home_colony_coords for i in range(len(p1_ships))) and any(p2_ships[i].coords == p1_home_colony_coords for i in range(len(p2_ships))):
-    #   self.logs.write('\nTIE GAME')
-    #   return 'Tie' 
-    # elif any(p1_ships[i].coords == p2_home_colony_coords for i in range(len(p1_ships))):
-    #   self.logs.write('\nWINNER: PLAYER 1')
-    #   return 1
-    # elif any(p2_ships[i].coords == p1_home_colony_coords for i in range(len(p2_ships))):
-    #   self.logs.write('\nWINNER: PLAYER 2')
-    #   return 2
-    # else:
-    #   return None
 
   def run_to_completion(self):
     while self.winner == None:
       self.complete_movement_phase()
       self.complete_combat_phase()
+      self.complete_economic_phase()
       self.turn += 1
       self.winner = self.check_for_winner()
 
@@ -306,6 +339,7 @@ class Game:
     while self.turn <= n and self.winner == None:
       self.complete_movement_phase()
       self.complete_combat_phase()
+      self.complete_economic_phase()
       self.turn += 1
       self.winner = self.check_for_winner()
 

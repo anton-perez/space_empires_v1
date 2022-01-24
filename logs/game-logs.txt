@@ -6,23 +6,35 @@ BEGINNING OF TURN 1 MOVEMENT PHASE
 	Player 1 Dreadnaught 3: (3, 0) -> (3, 1)
 	Player 1 Dreadnaught 4: (3, 0) -> (3, 1)
 	Player 1 Dreadnaught 5: (3, 0) -> (3, 1)
-	Player 1 Dreadnaught 6: (3, 0) -> (3, 1)
-	Player 1 Dreadnaught 7: (3, 0) -> (3, 1)
-	Player 1 Dreadnaught 8: (3, 0) -> (3, 1)
 	Player 2 Dreadnaught 1: (3, 6) -> (3, 5)
 	Player 2 Dreadnaught 2: (3, 6) -> (3, 5)
 	Player 2 Dreadnaught 3: (3, 6) -> (3, 5)
 	Player 2 Dreadnaught 4: (3, 6) -> (3, 5)
 	Player 2 Dreadnaught 5: (3, 6) -> (3, 5)
-	Player 2 Dreadnaught 6: (3, 6) -> (3, 5)
-	Player 2 Dreadnaught 7: (3, 6) -> (3, 5)
-	Player 2 Dreadnaught 8: (3, 6) -> (3, 5)
 
 END OF TURN 1 MOVEMENT PHASE
 
 BEGINNING OF TURN 1 COMBAT PHASE
 
 END OF TURN 1 COMBAT PHASE
+
+BEGINNING OF TURN 1 ECONOMIC PHASE
+
+	Maintenance for Player 1:
+		Maintenance done for Player 1 Dreadnaught 1
+		Maintenance done for Player 1 Dreadnaught 2
+		Maintenance done for Player 1 Dreadnaught 3
+		Maintenance done for Player 1 Dreadnaught 4
+		Maintenance done for Player 1 Dreadnaught 5
+
+	Maintenance for Player 2:
+		Maintenance done for Player 2 Dreadnaught 1
+		Maintenance done for Player 2 Dreadnaught 2
+		Maintenance done for Player 2 Dreadnaught 3
+		Maintenance done for Player 2 Dreadnaught 4
+		Maintenance done for Player 2 Dreadnaught 5
+
+END OF TURN 1 ECONOMIC PHASE
 
 BEGINNING OF TURN 2 MOVEMENT PHASE
 
@@ -31,23 +43,39 @@ BEGINNING OF TURN 2 MOVEMENT PHASE
 	Player 1 Dreadnaught 3: (3, 1) -> (3, 2)
 	Player 1 Dreadnaught 4: (3, 1) -> (3, 2)
 	Player 1 Dreadnaught 5: (3, 1) -> (3, 2)
-	Player 1 Dreadnaught 6: (3, 1) -> (3, 2)
-	Player 1 Dreadnaught 7: (3, 1) -> (3, 2)
-	Player 1 Dreadnaught 8: (3, 1) -> (3, 2)
 	Player 2 Dreadnaught 1: (3, 5) -> (3, 4)
 	Player 2 Dreadnaught 2: (3, 5) -> (3, 4)
 	Player 2 Dreadnaught 3: (3, 5) -> (3, 4)
 	Player 2 Dreadnaught 4: (3, 5) -> (3, 4)
 	Player 2 Dreadnaught 5: (3, 5) -> (3, 4)
-	Player 2 Dreadnaught 6: (3, 5) -> (3, 4)
-	Player 2 Dreadnaught 7: (3, 5) -> (3, 4)
-	Player 2 Dreadnaught 8: (3, 5) -> (3, 4)
 
 END OF TURN 2 MOVEMENT PHASE
 
 BEGINNING OF TURN 2 COMBAT PHASE
 
 END OF TURN 2 COMBAT PHASE
+
+BEGINNING OF TURN 2 ECONOMIC PHASE
+
+	Maintenance for Player 1:
+		Maintenance done for Player 1 Dreadnaught 1
+		Maintenance done for Player 1 Dreadnaught 2
+		Maintenance done for Player 1 Dreadnaught 3
+		Maintenance done for Player 1 Dreadnaught 4
+		Maintenance done for Player 1 Dreadnaught 5
+
+	Player 1 buys the following ships:
+
+	Maintenance for Player 2:
+		Maintenance done for Player 2 Dreadnaught 1
+		Maintenance done for Player 2 Dreadnaught 2
+		Maintenance done for Player 2 Dreadnaught 3
+		Maintenance done for Player 2 Dreadnaught 4
+		Maintenance done for Player 2 Dreadnaught 5
+
+	Player 2 buys the following ships:
+
+END OF TURN 2 ECONOMIC PHASE
 
 BEGINNING OF TURN 3 MOVEMENT PHASE
 
@@ -56,236 +84,63 @@ BEGINNING OF TURN 3 MOVEMENT PHASE
 	Player 1 Dreadnaught 3: (3, 2) -> (3, 3)
 	Player 1 Dreadnaught 4: (3, 2) -> (3, 3)
 	Player 1 Dreadnaught 5: (3, 2) -> (3, 3)
-	Player 1 Dreadnaught 6: (3, 2) -> (3, 3)
-	Player 1 Dreadnaught 7: (3, 2) -> (3, 3)
-	Player 1 Dreadnaught 8: (3, 2) -> (3, 3)
-	Player 2 Dreadnaught 1: (3, 4) -> (3, 4)
-	Player 2 Dreadnaught 2: (3, 4) -> (3, 4)
-	Player 2 Dreadnaught 3: (3, 4) -> (3, 4)
-	Player 2 Dreadnaught 4: (3, 4) -> (3, 4)
-	Player 2 Dreadnaught 5: (3, 4) -> (3, 4)
-	Player 2 Dreadnaught 6: (3, 4) -> (3, 4)
-	Player 2 Dreadnaught 7: (3, 4) -> (3, 4)
-	Player 2 Dreadnaught 8: (3, 4) -> (3, 4)
+	Player 2 Dreadnaught 1: (3, 4) -> (3, 3)
+	Player 2 Dreadnaught 2: (3, 4) -> (3, 3)
+	Player 2 Dreadnaught 3: (3, 4) -> (3, 3)
+	Player 2 Dreadnaught 4: (3, 4) -> (3, 3)
+	Player 2 Dreadnaught 5: (3, 4) -> (3, 3)
 
 END OF TURN 3 MOVEMENT PHASE
 
 BEGINNING OF TURN 3 COMBAT PHASE
 
-END OF TURN 3 COMBAT PHASE
-
-BEGINNING OF TURN 4 MOVEMENT PHASE
-
-	Player 1 Dreadnaught 1: (3, 3) -> (3, 4)
-	Player 1 Dreadnaught 2: (3, 3) -> (3, 4)
-	Player 1 Dreadnaught 3: (3, 3) -> (3, 4)
-	Player 1 Dreadnaught 4: (3, 3) -> (3, 4)
-	Player 1 Dreadnaught 5: (3, 3) -> (3, 4)
-	Player 1 Dreadnaught 6: (3, 3) -> (3, 4)
-	Player 1 Dreadnaught 7: (3, 3) -> (3, 4)
-	Player 1 Dreadnaught 8: (3, 3) -> (3, 4)
-
-END OF TURN 4 MOVEMENT PHASE
-
-BEGINNING OF TURN 4 COMBAT PHASE
-
-	 Combat at: (3, 4)
-
-		Attacker: Player 2 Dreadnaught 1
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 2
-		Defender: Player 1 Dreadnaught 3
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 3
-		Defender: Player 1 Dreadnaught 2
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 4
-		Defender: Player 1 Dreadnaught 2
-		Hit!
-
-		Player 2 Dreadnaught 4 dealt 1 dmg to Player 1 Dreadnaught 2
-
-		Attacker: Player 2 Dreadnaught 5
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 6
-		Defender: Player 1 Dreadnaught 3
-		Hit!
-
-		Player 2 Dreadnaught 6 dealt 1 dmg to Player 1 Dreadnaught 3
-
-		Attacker: Player 2 Dreadnaught 7
-		Defender: Player 1 Dreadnaught 5
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 8
-		Defender: Player 1 Dreadnaught 4
-		Hit!
-
-		Player 2 Dreadnaught 8 dealt 1 dmg to Player 1 Dreadnaught 4
+	 Combat at: (3, 3)
 
 		Attacker: Player 1 Dreadnaught 1
-		Defender: Player 2 Dreadnaught 1
-		Hit!
-
-		Player 1 Dreadnaught 1 dealt 1 dmg to Player 2 Dreadnaught 1
+		Defender: Player 2 Dreadnaught 2
+		(Miss)
 
 		Attacker: Player 1 Dreadnaught 2
-		Defender: Player 2 Dreadnaught 4
-		Hit!
-
-		Player 1 Dreadnaught 2 dealt 1 dmg to Player 2 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 2
+		(Miss)
 
 		Attacker: Player 1 Dreadnaught 3
 		Defender: Player 2 Dreadnaught 5
-		Hit!
-
-		Player 1 Dreadnaught 3 dealt 1 dmg to Player 2 Dreadnaught 5
-
-		Attacker: Player 1 Dreadnaught 4
-		Defender: Player 2 Dreadnaught 6
-		Hit!
-
-		Player 1 Dreadnaught 4 dealt 1 dmg to Player 2 Dreadnaught 6
-
-		Attacker: Player 1 Dreadnaught 5
-		Defender: Player 2 Dreadnaught 2
-		Hit!
-
-		Player 1 Dreadnaught 5 dealt 1 dmg to Player 2 Dreadnaught 2
-
-		Attacker: Player 1 Dreadnaught 6
-		Defender: Player 2 Dreadnaught 3
-		Hit!
-
-		Player 1 Dreadnaught 6 dealt 1 dmg to Player 2 Dreadnaught 3
-
-		Attacker: Player 1 Dreadnaught 7
-		Defender: Player 2 Dreadnaught 8
 		(Miss)
 
-		Attacker: Player 1 Dreadnaught 8
-		Defender: Player 2 Dreadnaught 7
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 4
 		(Miss)
 
 		Attacker: Player 2 Dreadnaught 1
-		Defender: Player 1 Dreadnaught 5
+		Defender: Player 1 Dreadnaught 2
 		(Miss)
 
 		Attacker: Player 2 Dreadnaught 2
-		Defender: Player 1 Dreadnaught 6
+		Defender: Player 1 Dreadnaught 1
 		(Miss)
 
 		Attacker: Player 2 Dreadnaught 3
-		Defender: Player 1 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 4
 		(Miss)
 
 		Attacker: Player 2 Dreadnaught 4
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 5
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 6
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 7
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 8
-		Defender: Player 1 Dreadnaught 5
+		Defender: Player 1 Dreadnaught 3
 		Hit!
 
-		Player 2 Dreadnaught 8 dealt 1 dmg to Player 1 Dreadnaught 5
+		Player 2 Dreadnaught 4 dealt 1 dmg to Player 1 Dreadnaught 3
+
+		Attacker: Player 2 Dreadnaught 5
+		Defender: Player 1 Dreadnaught 4
+		(Miss)
 
 		Attacker: Player 1 Dreadnaught 1
 		Defender: Player 2 Dreadnaught 1
 		(Miss)
-
-		Attacker: Player 1 Dreadnaught 2
-		Defender: Player 2 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 1 Dreadnaught 3
-		Defender: Player 2 Dreadnaught 7
-		(Miss)
-
-		Attacker: Player 1 Dreadnaught 4
-		Defender: Player 2 Dreadnaught 7
-		(Miss)
-
-		Attacker: Player 1 Dreadnaught 5
-		Defender: Player 2 Dreadnaught 7
-		(Miss)
-
-		Attacker: Player 1 Dreadnaught 6
-		Defender: Player 2 Dreadnaught 7
-		(Miss)
-
-		Attacker: Player 1 Dreadnaught 7
-		Defender: Player 2 Dreadnaught 7
-		Hit!
-
-		Player 1 Dreadnaught 7 dealt 1 dmg to Player 2 Dreadnaught 7
-
-		Attacker: Player 1 Dreadnaught 8
-		Defender: Player 2 Dreadnaught 8
-		Hit!
-
-		Player 1 Dreadnaught 8 dealt 1 dmg to Player 2 Dreadnaught 8
-
-		Attacker: Player 2 Dreadnaught 1
-		Defender: Player 1 Dreadnaught 7
-		Hit!
-
-		Player 2 Dreadnaught 1 dealt 1 dmg to Player 1 Dreadnaught 7
-
-		Attacker: Player 2 Dreadnaught 2
-		Defender: Player 1 Dreadnaught 8
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 3
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 4
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 5
-		Defender: Player 1 Dreadnaught 1
-		Hit!
-
-		Player 2 Dreadnaught 5 dealt 1 dmg to Player 1 Dreadnaught 1
-
-		Attacker: Player 2 Dreadnaught 6
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 7
-		Defender: Player 1 Dreadnaught 8
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 8
-		Defender: Player 1 Dreadnaught 8
-		Hit!
-
-		Player 2 Dreadnaught 8 dealt 1 dmg to Player 1 Dreadnaught 8
-
-		Attacker: Player 1 Dreadnaught 1
-		Defender: Player 2 Dreadnaught 2
-		Hit!
-
-		Player 1 Dreadnaught 1 dealt 1 dmg to Player 2 Dreadnaught 2
 
 		Attacker: Player 1 Dreadnaught 2
 		Defender: Player 2 Dreadnaught 3
@@ -294,163 +149,295 @@ BEGINNING OF TURN 4 COMBAT PHASE
 		Player 1 Dreadnaught 2 dealt 1 dmg to Player 2 Dreadnaught 3
 
 		Attacker: Player 1 Dreadnaught 3
-		Defender: Player 2 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 2
 		(Miss)
 
 		Attacker: Player 1 Dreadnaught 4
 		Defender: Player 2 Dreadnaught 5
-		Hit!
-
-		Player 1 Dreadnaught 4 dealt 1 dmg to Player 2 Dreadnaught 5
+		(Miss)
 
 		Attacker: Player 1 Dreadnaught 5
-		Defender: Player 2 Dreadnaught 6
-		Hit!
-
-		Player 1 Dreadnaught 5 dealt 1 dmg to Player 2 Dreadnaught 6
-
-		Attacker: Player 1 Dreadnaught 6
-		Defender: Player 2 Dreadnaught 7
-		Hit!
-
-		Player 1 Dreadnaught 6 dealt 1 dmg to Player 2 Dreadnaught 7
-
-		Attacker: Player 1 Dreadnaught 7
 		Defender: Player 2 Dreadnaught 4
 		(Miss)
 
-		Attacker: Player 1 Dreadnaught 8
-		Defender: Player 2 Dreadnaught 4
-		Hit!
-
-		Player 1 Dreadnaught 8 dealt 1 dmg to Player 2 Dreadnaught 4
-
 		Attacker: Player 2 Dreadnaught 1
-		Defender: Player 1 Dreadnaught 2
-		Hit!
-
-		Player 2 Dreadnaught 1 dealt 1 dmg to Player 1 Dreadnaught 2
-
-		Attacker: Player 2 Dreadnaught 2
 		Defender: Player 1 Dreadnaught 3
 		(Miss)
 
+		Attacker: Player 2 Dreadnaught 2
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
 		Attacker: Player 2 Dreadnaught 3
-		Defender: Player 1 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 5
 		(Miss)
 
 		Attacker: Player 2 Dreadnaught 4
-		Defender: Player 1 Dreadnaught 6
-		Hit!
-
-		Player 2 Dreadnaught 4 dealt 1 dmg to Player 1 Dreadnaught 6
+		Defender: Player 1 Dreadnaught 3
+		(Miss)
 
 		Attacker: Player 2 Dreadnaught 5
 		Defender: Player 1 Dreadnaught 1
 		(Miss)
 
-		Attacker: Player 2 Dreadnaught 6
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 7
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 8
-		Defender: Player 1 Dreadnaught 4
-		(Miss)
-
 		Attacker: Player 1 Dreadnaught 1
-		Defender: Player 2 Dreadnaught 8
+		Defender: Player 2 Dreadnaught 3
 		(Miss)
 
 		Attacker: Player 1 Dreadnaught 2
-		Defender: Player 2 Dreadnaught 1
+		Defender: Player 2 Dreadnaught 3
 		(Miss)
 
 		Attacker: Player 1 Dreadnaught 3
-		Defender: Player 2 Dreadnaught 8
+		Defender: Player 2 Dreadnaught 4
 		Hit!
 
-		Player 1 Dreadnaught 3 dealt 1 dmg to Player 2 Dreadnaught 8
+		Player 1 Dreadnaught 3 dealt 1 dmg to Player 2 Dreadnaught 4
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 4
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 2
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 3
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 4
+		Defender: Player 1 Dreadnaught 2
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 5
+		Defender: Player 1 Dreadnaught 1
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 1
+		Defender: Player 2 Dreadnaught 4
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 2
+		Defender: Player 2 Dreadnaught 5
+		Hit!
+
+		Player 1 Dreadnaught 2 dealt 1 dmg to Player 2 Dreadnaught 5
+
+		Attacker: Player 1 Dreadnaught 3
+		Defender: Player 2 Dreadnaught 3
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 4
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 4
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 2
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 2
+		Defender: Player 1 Dreadnaught 4
+		Hit!
+
+		Player 2 Dreadnaught 2 dealt 1 dmg to Player 1 Dreadnaught 4
+
+		Attacker: Player 2 Dreadnaught 3
+		Defender: Player 1 Dreadnaught 3
+		Hit!
+
+		Player 2 Dreadnaught 3 dealt 1 dmg to Player 1 Dreadnaught 3
+
+		Attacker: Player 2 Dreadnaught 4
+		Defender: Player 1 Dreadnaught 1
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 5
+		Defender: Player 1 Dreadnaught 3
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 1
+		Defender: Player 2 Dreadnaught 2
+		Hit!
+
+		Player 1 Dreadnaught 1 dealt 1 dmg to Player 2 Dreadnaught 2
+
+		Attacker: Player 1 Dreadnaught 2
+		Defender: Player 2 Dreadnaught 4
+		Hit!
+
+		Player 1 Dreadnaught 2 dealt 1 dmg to Player 2 Dreadnaught 4
+
+		Attacker: Player 1 Dreadnaught 3
+		Defender: Player 2 Dreadnaught 1
+		(Miss)
 
 		Attacker: Player 1 Dreadnaught 4
 		Defender: Player 2 Dreadnaught 2
 		(Miss)
 
 		Attacker: Player 1 Dreadnaught 5
-		Defender: Player 2 Dreadnaught 2
+		Defender: Player 2 Dreadnaught 3
 		(Miss)
 
-		Attacker: Player 1 Dreadnaught 6
-		Defender: Player 2 Dreadnaught 1
-		Hit!
-
-		Player 1 Dreadnaught 6 dealt 1 dmg to Player 2 Dreadnaught 1
-
-		Attacker: Player 1 Dreadnaught 7
-		Defender: Player 2 Dreadnaught 2
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 5
 		(Miss)
-
-		Attacker: Player 1 Dreadnaught 8
-		Defender: Player 2 Dreadnaught 1
-		Hit!
-
-		Player 1 Dreadnaught 8 dealt 1 dmg to Player 2 Dreadnaught 1
-		Player 2 Dreadnaught 1 was destroyed
 
 		Attacker: Player 2 Dreadnaught 2
 		Defender: Player 1 Dreadnaught 1
-		Hit!
-
-		Player 2 Dreadnaught 2 dealt 1 dmg to Player 1 Dreadnaught 1
+		(Miss)
 
 		Attacker: Player 2 Dreadnaught 3
-		Defender: Player 1 Dreadnaught 4
-		Hit!
-
-		Player 2 Dreadnaught 3 dealt 1 dmg to Player 1 Dreadnaught 4
+		Defender: Player 1 Dreadnaught 1
+		(Miss)
 
 		Attacker: Player 2 Dreadnaught 4
-		Defender: Player 1 Dreadnaught 5
-		Hit!
-
-		Player 2 Dreadnaught 4 dealt 1 dmg to Player 1 Dreadnaught 5
-
-		Attacker: Player 2 Dreadnaught 5
-		Defender: Player 1 Dreadnaught 6
-		Hit!
-
-		Player 2 Dreadnaught 5 dealt 1 dmg to Player 1 Dreadnaught 6
-
-		Attacker: Player 2 Dreadnaught 6
 		Defender: Player 1 Dreadnaught 3
 		(Miss)
 
-		Attacker: Player 2 Dreadnaught 7
-		Defender: Player 1 Dreadnaught 8
+		Attacker: Player 2 Dreadnaught 5
+		Defender: Player 1 Dreadnaught 2
 		(Miss)
 
-		Attacker: Player 2 Dreadnaught 8
-		Defender: Player 1 Dreadnaught 7
-		Hit!
-
-		Player 2 Dreadnaught 8 dealt 1 dmg to Player 1 Dreadnaught 7
-
 		Attacker: Player 1 Dreadnaught 1
+		Defender: Player 2 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 2
+		Defender: Player 2 Dreadnaught 1
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 3
 		Defender: Player 2 Dreadnaught 4
 		Hit!
 
-		Player 1 Dreadnaught 1 dealt 1 dmg to Player 2 Dreadnaught 4
+		Player 1 Dreadnaught 3 dealt 1 dmg to Player 2 Dreadnaught 4
 		Player 2 Dreadnaught 4 was destroyed
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 3
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 2
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 2
+		Defender: Player 1 Dreadnaught 3
+		Hit!
+
+		Player 2 Dreadnaught 2 dealt 1 dmg to Player 1 Dreadnaught 3
+		Player 1 Dreadnaught 3 was destroyed
+
+		Attacker: Player 2 Dreadnaught 3
+		Defender: Player 1 Dreadnaught 4
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 5
+		Defender: Player 1 Dreadnaught 1
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 1
+		Defender: Player 2 Dreadnaught 5
+		Hit!
+
+		Player 1 Dreadnaught 1 dealt 1 dmg to Player 2 Dreadnaught 5
+
+		Attacker: Player 1 Dreadnaught 2
+		Defender: Player 2 Dreadnaught 3
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 2
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 1
+		Hit!
+
+		Player 2 Dreadnaught 1 dealt 1 dmg to Player 1 Dreadnaught 1
+
+		Attacker: Player 2 Dreadnaught 2
+		Defender: Player 1 Dreadnaught 2
+		Hit!
+
+		Player 2 Dreadnaught 2 dealt 1 dmg to Player 1 Dreadnaught 2
+
+		Attacker: Player 2 Dreadnaught 3
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 5
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 1
+		Defender: Player 2 Dreadnaught 2
+		Hit!
+
+		Player 1 Dreadnaught 1 dealt 1 dmg to Player 2 Dreadnaught 2
 
 		Attacker: Player 1 Dreadnaught 2
 		Defender: Player 2 Dreadnaught 2
 		(Miss)
 
-		Attacker: Player 1 Dreadnaught 3
+		Attacker: Player 1 Dreadnaught 4
 		Defender: Player 2 Dreadnaught 3
+		Hit!
+
+		Player 1 Dreadnaught 4 dealt 1 dmg to Player 2 Dreadnaught 3
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 2
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 1
+		Hit!
+
+		Player 2 Dreadnaught 1 dealt 1 dmg to Player 1 Dreadnaught 1
+
+		Attacker: Player 2 Dreadnaught 2
+		Defender: Player 1 Dreadnaught 2
+		Hit!
+
+		Player 2 Dreadnaught 2 dealt 1 dmg to Player 1 Dreadnaught 2
+
+		Attacker: Player 2 Dreadnaught 3
+		Defender: Player 1 Dreadnaught 2
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 5
+		Defender: Player 1 Dreadnaught 2
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 1
+		Defender: Player 2 Dreadnaught 3
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 2
+		Defender: Player 2 Dreadnaught 5
 		(Miss)
 
 		Attacker: Player 1 Dreadnaught 4
@@ -461,125 +448,265 @@ BEGINNING OF TURN 4 COMBAT PHASE
 		Player 2 Dreadnaught 2 was destroyed
 
 		Attacker: Player 1 Dreadnaught 5
-		Defender: Player 2 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 3
 		(Miss)
 
-		Attacker: Player 1 Dreadnaught 6
-		Defender: Player 2 Dreadnaught 3
-		Hit!
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 2
+		(Miss)
 
-		Player 1 Dreadnaught 6 dealt 1 dmg to Player 2 Dreadnaught 3
-		Player 2 Dreadnaught 3 was destroyed
-
-		Attacker: Player 1 Dreadnaught 7
-		Defender: Player 2 Dreadnaught 6
-		Hit!
-
-		Player 1 Dreadnaught 7 dealt 1 dmg to Player 2 Dreadnaught 6
-		Player 2 Dreadnaught 6 was destroyed
-
-		Attacker: Player 1 Dreadnaught 8
-		Defender: Player 2 Dreadnaught 5
+		Attacker: Player 2 Dreadnaught 3
+		Defender: Player 1 Dreadnaught 4
 		(Miss)
 
 		Attacker: Player 2 Dreadnaught 5
-		Defender: Player 1 Dreadnaught 1
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 7
-		Defender: Player 1 Dreadnaught 3
-		Hit!
-
-		Player 2 Dreadnaught 7 dealt 1 dmg to Player 1 Dreadnaught 3
-
-		Attacker: Player 2 Dreadnaught 8
-		Defender: Player 1 Dreadnaught 8
+		Defender: Player 1 Dreadnaught 5
 		(Miss)
 
 		Attacker: Player 1 Dreadnaught 1
-		Defender: Player 2 Dreadnaught 5
-		(Miss)
+		Defender: Player 2 Dreadnaught 3
+		Hit!
+
+		Player 1 Dreadnaught 1 dealt 1 dmg to Player 2 Dreadnaught 3
+		Player 2 Dreadnaught 3 was destroyed
 
 		Attacker: Player 1 Dreadnaught 2
 		Defender: Player 2 Dreadnaught 5
-		Hit!
-
-		Player 1 Dreadnaught 2 dealt 1 dmg to Player 2 Dreadnaught 5
-		Player 2 Dreadnaught 5 was destroyed
-
-		Attacker: Player 1 Dreadnaught 3
-		Defender: Player 2 Dreadnaught 7
 		(Miss)
 
 		Attacker: Player 1 Dreadnaught 4
-		Defender: Player 2 Dreadnaught 7
+		Defender: Player 2 Dreadnaught 5
 		(Miss)
 
 		Attacker: Player 1 Dreadnaught 5
-		Defender: Player 2 Dreadnaught 7
-		(Miss)
-
-		Attacker: Player 1 Dreadnaught 6
-		Defender: Player 2 Dreadnaught 7
+		Defender: Player 2 Dreadnaught 5
 		Hit!
 
-		Player 1 Dreadnaught 6 dealt 1 dmg to Player 2 Dreadnaught 7
-		Player 2 Dreadnaught 7 was destroyed
+		Player 1 Dreadnaught 5 dealt 1 dmg to Player 2 Dreadnaught 5
+		Player 2 Dreadnaught 5 was destroyed
 
-		Attacker: Player 1 Dreadnaught 7
-		Defender: Player 2 Dreadnaught 8
-		(Miss)
-
-		Attacker: Player 1 Dreadnaught 8
-		Defender: Player 2 Dreadnaught 8
-		(Miss)
-
-		Attacker: Player 2 Dreadnaught 8
-		Defender: Player 1 Dreadnaught 8
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 1
 		Hit!
 
-		Player 2 Dreadnaught 8 dealt 1 dmg to Player 1 Dreadnaught 8
+		Player 2 Dreadnaught 1 dealt 1 dmg to Player 1 Dreadnaught 1
+		Player 1 Dreadnaught 1 was destroyed
 
-		Attacker: Player 1 Dreadnaught 1
-		Defender: Player 2 Dreadnaught 8
+		Attacker: Player 1 Dreadnaught 2
+		Defender: Player 2 Dreadnaught 1
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 1
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 1
+		Hit!
+
+		Player 1 Dreadnaught 5 dealt 1 dmg to Player 2 Dreadnaught 1
+
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 4
 		(Miss)
 
 		Attacker: Player 1 Dreadnaught 2
-		Defender: Player 2 Dreadnaught 8
+		Defender: Player 2 Dreadnaught 1
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 1
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 1
 		Hit!
 
-		Player 1 Dreadnaught 2 dealt 1 dmg to Player 2 Dreadnaught 8
-		Player 2 Dreadnaught 8 was destroyed
+		Player 1 Dreadnaught 5 dealt 1 dmg to Player 2 Dreadnaught 1
+
+		Attacker: Player 2 Dreadnaught 1
+		Defender: Player 1 Dreadnaught 2
+		Hit!
+
+		Player 2 Dreadnaught 1 dealt 1 dmg to Player 1 Dreadnaught 2
+		Player 1 Dreadnaught 2 was destroyed
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 1
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 1
+		Hit!
+
+		Player 1 Dreadnaught 5 dealt 1 dmg to Player 2 Dreadnaught 1
+		Player 2 Dreadnaught 1 was destroyed
+
+END OF TURN 3 COMBAT PHASE
+
+BEGINNING OF TURN 3 ECONOMIC PHASE
+
+	Maintenance for Player 1:
+		Maintenance done for Player 1 Dreadnaught 4
+		Maintenance done for Player 1 Dreadnaught 5
+
+	Maintenance for Player 2:
+
+END OF TURN 3 ECONOMIC PHASE
+
+BEGINNING OF TURN 4 MOVEMENT PHASE
+
+	Player 1 Dreadnaught 4: (3, 3) -> (3, 4)
+	Player 1 Dreadnaught 5: (3, 3) -> (3, 4)
+
+END OF TURN 4 MOVEMENT PHASE
+
+BEGINNING OF TURN 4 COMBAT PHASE
 
 END OF TURN 4 COMBAT PHASE
 
+BEGINNING OF TURN 4 ECONOMIC PHASE
+
+	Maintenance for Player 1:
+		Maintenance done for Player 1 Dreadnaught 4
+		Maintenance done for Player 1 Dreadnaught 5
+
+	Player 1 buys the following ships:
+
+	Maintenance for Player 2:
+
+	Player 2 buys the following ships:
+		 Player 2 Dreadnaught 6
+
+END OF TURN 4 ECONOMIC PHASE
+
 BEGINNING OF TURN 5 MOVEMENT PHASE
 
-	Player 1 Dreadnaught 1: (3, 4) -> (3, 5)
-	Player 1 Dreadnaught 2: (3, 4) -> (3, 5)
-	Player 1 Dreadnaught 3: (3, 4) -> (3, 5)
 	Player 1 Dreadnaught 4: (3, 4) -> (3, 5)
 	Player 1 Dreadnaught 5: (3, 4) -> (3, 5)
-	Player 1 Dreadnaught 6: (3, 4) -> (3, 5)
-	Player 1 Dreadnaught 7: (3, 4) -> (3, 5)
-	Player 1 Dreadnaught 8: (3, 4) -> (3, 5)
+	Player 2 Dreadnaught 6: (3, 6) -> (3, 5)
 
 END OF TURN 5 MOVEMENT PHASE
 
 BEGINNING OF TURN 5 COMBAT PHASE
 
+	 Combat at: (3, 5)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 6
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 6
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 6
+		Defender: Player 1 Dreadnaught 4
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 6
+		Defender: Player 1 Dreadnaught 4
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 6
+		Defender: Player 1 Dreadnaught 5
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 6
+		Hit!
+
+		Player 1 Dreadnaught 5 dealt 1 dmg to Player 2 Dreadnaught 6
+
+		Attacker: Player 2 Dreadnaught 6
+		Defender: Player 1 Dreadnaught 4
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 6
+		Hit!
+
+		Player 1 Dreadnaught 4 dealt 1 dmg to Player 2 Dreadnaught 6
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 2 Dreadnaught 6
+		Defender: Player 1 Dreadnaught 4
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 4
+		Defender: Player 2 Dreadnaught 6
+		(Miss)
+
+		Attacker: Player 1 Dreadnaught 5
+		Defender: Player 2 Dreadnaught 6
+		Hit!
+
+		Player 1 Dreadnaught 5 dealt 1 dmg to Player 2 Dreadnaught 6
+		Player 2 Dreadnaught 6 was destroyed
+
 END OF TURN 5 COMBAT PHASE
+
+BEGINNING OF TURN 5 ECONOMIC PHASE
+
+	Maintenance for Player 1:
+		Maintenance done for Player 1 Dreadnaught 4
+		Maintenance done for Player 1 Dreadnaught 5
+
+	Maintenance for Player 2:
+
+END OF TURN 5 ECONOMIC PHASE
 
 BEGINNING OF TURN 6 MOVEMENT PHASE
 
-	Player 1 Dreadnaught 1: (3, 5) -> (3, 6)
-	Player 1 Dreadnaught 2: (3, 5) -> (3, 6)
-	Player 1 Dreadnaught 3: (3, 5) -> (3, 6)
 	Player 1 Dreadnaught 4: (3, 5) -> (3, 6)
 	Player 1 Dreadnaught 5: (3, 5) -> (3, 6)
-	Player 1 Dreadnaught 6: (3, 5) -> (3, 6)
-	Player 1 Dreadnaught 7: (3, 5) -> (3, 6)
-	Player 1 Dreadnaught 8: (3, 5) -> (3, 6)
 
 END OF TURN 6 MOVEMENT PHASE
 
@@ -587,4 +714,22 @@ BEGINNING OF TURN 6 COMBAT PHASE
 
 END OF TURN 6 COMBAT PHASE
 
+BEGINNING OF TURN 6 ECONOMIC PHASE
+
+	Maintenance for Player 1:
+		Maintenance done for Player 1 Dreadnaught 4
+		Maintenance done for Player 1 Dreadnaught 5
+
+	Player 1 buys the following ships:
+		 Player 1 Dreadnaught 6
+
+	Maintenance for Player 2:
+
+	Player 2 buys the following ships:
+		 Player 2 Dreadnaught 7
+
+END OF TURN 6 ECONOMIC PHASE
+
 PLAYER 2 HAS BEEN REMOVED FROM THE GAME
+
+PLAYER 1 HAS WON

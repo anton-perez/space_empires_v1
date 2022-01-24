@@ -19,6 +19,7 @@ class Scout(Ship):
     self.df = 0
     self.ship_class = 'E'
     self.cp_cost = 6
+    self.maint_cost = 1
     self.obj_type = 'Ship'
     self.coords = initial_coords
 
@@ -32,6 +33,7 @@ class BattleCruiser(Ship):
     self.df = 1
     self.ship_class = 'B'
     self.cp_cost = 15
+    self.maint_cost = 2
     self.obj_type = 'Ship'
     self.coords = initial_coords
     
@@ -45,6 +47,7 @@ class BattleShip(Ship):
     self.df = 2
     self.ship_class = 'A'
     self.cp_cost = 20
+    self.maint_cost = 3
     self.obj_type = 'Ship'
     self.coords = initial_coords
 
@@ -58,6 +61,7 @@ class Cruiser(Ship):
     self.df = 1
     self.ship_class = 'C'
     self.cp_cost = 12
+    self.maint_cost = 2
     self.obj_type = 'Ship'
     self.coords = initial_coords
 
@@ -71,6 +75,7 @@ class Destroyer(Ship):
     self.df = 0
     self.ship_class = 'D'
     self.cp_cost = 9
+    self.maint_cost = 1
     self.obj_type = 'Ship'
     self.coords = initial_coords
 
@@ -84,5 +89,6 @@ class Dreadnaught(Ship):
     self.df = 3
     self.ship_class = 'A'
     self.cp_cost = 24
+    self.maint_cost = 3
     self.obj_type = 'Ship'
     self.coords = initial_coords

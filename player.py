@@ -1,4 +1,5 @@
 from random import random
+from ship_data import *
 import math
 import sys
 sys.path.append('')
@@ -11,6 +12,7 @@ class Player():
     self.home_colony = None
     self.ships = []
     self.colonies = []
+    self.ship_counter = {name:0 for name in ship_objects}
     self.cp = 0
     self.strategy = strategy
 
@@ -23,7 +25,8 @@ class Player():
 
   def add_ship(self, ship):
     ship.set_player_number(self.player_num)
-    ship.set_ship_number(len(self.get_ships_by_type(ship.name))+1)
+    self.ship_counter[ship.name] += 1
+    ship.set_ship_number(self.ship_counter[ship.name])
     self.ships.append(ship)
 
   def remove_ship(self, ship):

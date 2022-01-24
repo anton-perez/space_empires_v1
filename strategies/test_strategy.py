@@ -1,10 +1,12 @@
 from random import random
+from ship_data import *
 import math
 
 
 class CustomStrategy():
   def __init__(self):
     self.simple_board = {}
+    self.turn = 0
   
   def update_simple_board(self, updated_board):
     self.simple_board = updated_board
@@ -61,4 +63,8 @@ class CustomStrategy():
     return opponent_ship_infos[random_idx]
 
   def buy_ships(self, cp_budget):
-    return {'Scout':10}
+    if self.turn == 0:
+      return {'Dreadnaught':5}
+    elif self.turn%2 == 0:
+      return {'Dreadnaught':2*cp_budget//(3*dreadnaught['cp_cost'])}
+
